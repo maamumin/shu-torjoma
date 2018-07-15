@@ -1,0 +1,2 @@
+To run the decoder, please call:
+  moses -f /home/mumin-cse/smt-en-bn/mert-work/filtered/moses.ini -i /home/mumin-cse/smt-en-bn/mert-work/filtered/input.4060

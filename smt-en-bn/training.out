@@ -1,0 +1,1665 @@
+nohup: ignoring input
+Using SCRIPTS_ROOTDIR: /home/mumin-cse/mosesdecoder/scripts
+Using single-thread GIZA
+using gzip 
+(1) preparing corpus @ Wed May 30 14:23:14 +06 2018
+Executing: mkdir -p /home/mumin-cse/smt-en-bn/train/corpus
+(1.0) selecting factors @ Wed May 30 14:23:14 +06 2018
+(1.1) running mkcls  @ Wed May 30 14:23:14 +06 2018
+/home/mumin-cse/mosesdecoder/tools/mkcls -c50 -n2 -p/home/mumin-cse/corpus/training/training.clean.en -V/home/mumin-cse/smt-en-bn/train/corpus/en.vcb.classes opt
+Executing: /home/mumin-cse/mosesdecoder/tools/mkcls -c50 -n2 -p/home/mumin-cse/corpus/training/training.clean.en -V/home/mumin-cse/smt-en-bn/train/corpus/en.vcb.classes opt
+
+***** 2 runs. (algorithm:TA)*****
+;KategProblem:cats: 50   words: 92617
+
+start-costs: MEAN: 5.54884e+07 (5.54467e+07-5.55302e+07)  SIGMA:41752.9   
+  end-costs: MEAN: 5.27363e+07 (5.27264e+07-5.27462e+07)  SIGMA:9883.98   
+   start-pp: MEAN: 867.893 (858.129-877.656)  SIGMA:9.76356   
+     end-pp: MEAN: 413.42 (412.319-414.521)  SIGMA:1.10102   
+ iterations: MEAN: 2.43261e+06 (2.33555e+06-2.52968e+06)  SIGMA:97064.5   
+       time: MEAN: 74.4693 (71.2424-77.6962)  SIGMA:3.22689   
+(1.1) running mkcls  @ Wed May 30 14:25:47 +06 2018
+/home/mumin-cse/mosesdecoder/tools/mkcls -c50 -n2 -p/home/mumin-cse/corpus/training/training.clean.bn -V/home/mumin-cse/smt-en-bn/train/corpus/bn.vcb.classes opt
+Executing: /home/mumin-cse/mosesdecoder/tools/mkcls -c50 -n2 -p/home/mumin-cse/corpus/training/training.clean.bn -V/home/mumin-cse/smt-en-bn/train/corpus/bn.vcb.classes opt
+
+***** 2 runs. (algorithm:TA)*****
+;KategProblem:cats: 50   words: 154391
+
+start-costs: MEAN: 4.94154e+07 (4.93847e+07-4.94461e+07)  SIGMA:30726.6   
+  end-costs: MEAN: 4.68368e+07 (4.68249e+07-4.68487e+07)  SIGMA:11876.8   
+   start-pp: MEAN: 2431.77 (2409.3-2454.24)  SIGMA:22.471   
+     end-pp: MEAN: 1119.72 (1115.72-1123.72)  SIGMA:3.99949   
+ iterations: MEAN: 4.32052e+06 (4.28025e+06-4.36078e+06)  SIGMA:40269   
+       time: MEAN: 123.086 (112.392-133.78)  SIGMA:10.6942   
+(1.2) creating vcb file /home/mumin-cse/smt-en-bn/train/corpus/en.vcb @ Wed May 30 14:30:02 +06 2018
+(1.2) creating vcb file /home/mumin-cse/smt-en-bn/train/corpus/bn.vcb @ Wed May 30 14:30:03 +06 2018
+(1.3) numberizing corpus /home/mumin-cse/smt-en-bn/train/corpus/en-bn-int-train.snt @ Wed May 30 14:30:04 +06 2018
+(1.3) numberizing corpus /home/mumin-cse/smt-en-bn/train/corpus/bn-en-int-train.snt @ Wed May 30 14:30:07 +06 2018
+(2) running giza @ Wed May 30 14:30:09 +06 2018
+(2.1a) running snt2cooc en-bn @ Wed May 30 14:30:09 +06 2018
+
+Executing: mkdir -p /home/mumin-cse/smt-en-bn/train/giza.en-bn
+Executing: /home/mumin-cse/mosesdecoder/tools/snt2cooc.out /home/mumin-cse/smt-en-bn/train/corpus/bn.vcb /home/mumin-cse/smt-en-bn/train/corpus/en.vcb /home/mumin-cse/smt-en-bn/train/corpus/en-bn-int-train.snt > /home/mumin-cse/smt-en-bn/train/giza.en-bn/en-bn.cooc
+/home/mumin-cse/mosesdecoder/tools/snt2cooc.out /home/mumin-cse/smt-en-bn/train/corpus/bn.vcb /home/mumin-cse/smt-en-bn/train/corpus/en.vcb /home/mumin-cse/smt-en-bn/train/corpus/en-bn-int-train.snt > /home/mumin-cse/smt-en-bn/train/giza.en-bn/en-bn.cooc
+line 1000
+line 2000
+line 3000
+line 4000
+line 5000
+line 6000
+line 7000
+line 8000
+line 9000
+line 10000
+line 11000
+line 12000
+line 13000
+line 14000
+line 15000
+line 16000
+line 17000
+line 18000
+line 19000
+line 20000
+line 21000
+line 22000
+line 23000
+line 24000
+line 25000
+line 26000
+line 27000
+line 28000
+line 29000
+line 30000
+line 31000
+line 32000
+line 33000
+line 34000
+line 35000
+line 36000
+line 37000
+line 38000
+line 39000
+line 40000
+line 41000
+line 42000
+line 43000
+line 44000
+line 45000
+line 46000
+line 47000
+line 48000
+line 49000
+line 50000
+line 51000
+line 52000
+line 53000
+line 54000
+line 55000
+line 56000
+line 57000
+line 58000
+line 59000
+line 60000
+line 61000
+line 62000
+line 63000
+line 64000
+line 65000
+line 66000
+line 67000
+line 68000
+line 69000
+line 70000
+line 71000
+line 72000
+line 73000
+line 74000
+line 75000
+line 76000
+line 77000
+line 78000
+line 79000
+line 80000
+line 81000
+line 82000
+line 83000
+line 84000
+line 85000
+line 86000
+line 87000
+line 88000
+line 89000
+line 90000
+line 91000
+line 92000
+line 93000
+line 94000
+line 95000
+line 96000
+line 97000
+line 98000
+line 99000
+line 100000
+line 101000
+line 102000
+line 103000
+line 104000
+line 105000
+line 106000
+line 107000
+line 108000
+line 109000
+line 110000
+line 111000
+line 112000
+line 113000
+line 114000
+line 115000
+line 116000
+line 117000
+line 118000
+line 119000
+line 120000
+line 121000
+line 122000
+line 123000
+line 124000
+line 125000
+line 126000
+line 127000
+line 128000
+line 129000
+line 130000
+line 131000
+line 132000
+line 133000
+line 134000
+line 135000
+line 136000
+line 137000
+line 138000
+line 139000
+line 140000
+line 141000
+line 142000
+line 143000
+line 144000
+line 145000
+line 146000
+line 147000
+line 148000
+line 149000
+line 150000
+line 151000
+line 152000
+line 153000
+line 154000
+line 155000
+line 156000
+line 157000
+line 158000
+line 159000
+line 160000
+line 161000
+line 162000
+line 163000
+line 164000
+line 165000
+line 166000
+line 167000
+line 168000
+line 169000
+line 170000
+line 171000
+line 172000
+line 173000
+line 174000
+line 175000
+line 176000
+line 177000
+line 178000
+line 179000
+line 180000
+line 181000
+line 182000
+line 183000
+line 184000
+line 185000
+line 186000
+line 187000
+line 188000
+line 189000
+line 190000
+line 191000
+line 192000
+line 193000
+line 194000
+line 195000
+line 196000
+line 197000
+END.
+(2.1b) running giza en-bn @ Wed May 30 14:30:32 +06 2018
+/home/mumin-cse/mosesdecoder/tools/GIZA++  -CoocurrenceFile /home/mumin-cse/smt-en-bn/train/giza.en-bn/en-bn.cooc -c /home/mumin-cse/smt-en-bn/train/corpus/en-bn-int-train.snt -m1 5 -m2 0 -m3 3 -m4 3 -model1dumpfrequency 1 -model4smoothfactor 0.4 -nodumps 1 -nsmooth 4 -o /home/mumin-cse/smt-en-bn/train/giza.en-bn/en-bn -onlyaldumps 1 -p0 0.999 -s /home/mumin-cse/smt-en-bn/train/corpus/bn.vcb -t /home/mumin-cse/smt-en-bn/train/corpus/en.vcb
+Executing: /home/mumin-cse/mosesdecoder/tools/GIZA++  -CoocurrenceFile /home/mumin-cse/smt-en-bn/train/giza.en-bn/en-bn.cooc -c /home/mumin-cse/smt-en-bn/train/corpus/en-bn-int-train.snt -m1 5 -m2 0 -m3 3 -m4 3 -model1dumpfrequency 1 -model4smoothfactor 0.4 -nodumps 1 -nsmooth 4 -o /home/mumin-cse/smt-en-bn/train/giza.en-bn/en-bn -onlyaldumps 1 -p0 0.999 -s /home/mumin-cse/smt-en-bn/train/corpus/bn.vcb -t /home/mumin-cse/smt-en-bn/train/corpus/en.vcb
+/home/mumin-cse/mosesdecoder/tools/GIZA++  -CoocurrenceFile /home/mumin-cse/smt-en-bn/train/giza.en-bn/en-bn.cooc -c /home/mumin-cse/smt-en-bn/train/corpus/en-bn-int-train.snt -m1 5 -m2 0 -m3 3 -m4 3 -model1dumpfrequency 1 -model4smoothfactor 0.4 -nodumps 1 -nsmooth 4 -o /home/mumin-cse/smt-en-bn/train/giza.en-bn/en-bn -onlyaldumps 1 -p0 0.999 -s /home/mumin-cse/smt-en-bn/train/corpus/bn.vcb -t /home/mumin-cse/smt-en-bn/train/corpus/en.vcb
+Parameter 'coocurrencefile' changed from '' to '/home/mumin-cse/smt-en-bn/train/giza.en-bn/en-bn.cooc'
+Parameter 'c' changed from '' to '/home/mumin-cse/smt-en-bn/train/corpus/en-bn-int-train.snt'
+Parameter 'm3' changed from '5' to '3'
+Parameter 'm4' changed from '5' to '3'
+Parameter 'model1dumpfrequency' changed from '0' to '1'
+Parameter 'model4smoothfactor' changed from '0.2' to '0.4'
+Parameter 'nodumps' changed from '0' to '1'
+Parameter 'nsmooth' changed from '64' to '4'
+Parameter 'o' changed from '118-05-30.143032.mumin-cse' to '/home/mumin-cse/smt-en-bn/train/giza.en-bn/en-bn'
+Parameter 'onlyaldumps' changed from '0' to '1'
+Parameter 'p0' changed from '-1' to '0.999'
+Parameter 's' changed from '' to '/home/mumin-cse/smt-en-bn/train/corpus/bn.vcb'
+Parameter 't' changed from '' to '/home/mumin-cse/smt-en-bn/train/corpus/en.vcb'
+general parameters:
+-------------------
+ml = 101  (maximum sentence length)
+
+No. of iterations:
+-------------------
+hmmiterations = 5  (mh)
+model1iterations = 5  (number of iterations for Model 1)
+model2iterations = 0  (number of iterations for Model 2)
+model3iterations = 3  (number of iterations for Model 3)
+model4iterations = 3  (number of iterations for Model 4)
+model5iterations = 0  (number of iterations for Model 5)
+model6iterations = 0  (number of iterations for Model 6)
+
+parameter for various heuristics in GIZA++ for efficient training:
+------------------------------------------------------------------
+countincreasecutoff = 1e-06  (Counts increment cutoff threshold)
+countincreasecutoffal = 1e-05  (Counts increment cutoff threshold for alignments in training of fertility models)
+mincountincrease = 1e-07  (minimal count increase)
+peggedcutoff = 0.03  (relative cutoff probability for alignment-centers in pegging)
+probcutoff = 1e-07  (Probability cutoff threshold for lexicon probabilities)
+probsmooth = 1e-07  (probability smoothing (floor) value )
+
+parameters for describing the type and amount of output:
+-----------------------------------------------------------
+compactalignmentformat = 0  (0: detailled alignment format, 1: compact alignment format )
+hmmdumpfrequency = 0  (dump frequency of HMM)
+l = 118-05-30.143032.mumin-cse.log  (log file name)
+log = 0  (0: no logfile; 1: logfile)
+model1dumpfrequency = 1  (dump frequency of Model 1)
+model2dumpfrequency = 0  (dump frequency of Model 2)
+model345dumpfrequency = 0  (dump frequency of Model 3/4/5)
+nbestalignments = 0  (for printing the n best alignments)
+nodumps = 1  (1: do not write any files)
+o = /home/mumin-cse/smt-en-bn/train/giza.en-bn/en-bn  (output file prefix)
+onlyaldumps = 1  (1: do not write any files)
+outputpath =   (output path)
+transferdumpfrequency = 0  (output: dump of transfer from Model 2 to 3)
+verbose = 0  (0: not verbose; 1: verbose)
+verbosesentence = -10  (number of sentence for which a lot of information should be printed (negative: no output))
+
+parameters describing input files:
+----------------------------------
+c = /home/mumin-cse/smt-en-bn/train/corpus/en-bn-int-train.snt  (training corpus file name)
+d =   (dictionary file name)
+s = /home/mumin-cse/smt-en-bn/train/corpus/bn.vcb  (source vocabulary file name)
+t = /home/mumin-cse/smt-en-bn/train/corpus/en.vcb  (target vocabulary file name)
+tc =   (test corpus file name)
+
+smoothing parameters:
+---------------------
+emalsmooth = 0.2  (f-b-trn: smoothing factor for HMM alignment model (can be ignored by -emSmoothHMM))
+model23smoothfactor = 0  (smoothing parameter for IBM-2/3 (interpolation with constant))
+model4smoothfactor = 0.4  (smooting parameter for alignment probabilities in Model 4)
+model5smoothfactor = 0.1  (smooting parameter for distortion probabilities in Model 5 (linear interpolation with constant))
+nsmooth = 4  (smoothing for fertility parameters (good value: 64): weight for wordlength-dependent fertility parameters)
+nsmoothgeneral = 0  (smoothing for fertility parameters (default: 0): weight for word-independent fertility parameters)
+
+parameters modifying the models:
+--------------------------------
+compactadtable = 1  (1: only 3-dimensional alignment table for IBM-2 and IBM-3)
+deficientdistortionforemptyword = 0  (0: IBM-3/IBM-4 as described in (Brown et al. 1993); 1: distortion model of empty word is deficient; 2: distoriton model of empty word is deficient (differently); setting this parameter also helps to avoid that during IBM-3 and IBM-4 training too many words are aligned with the empty word)
+depm4 = 76  (d_{=1}: &1:l, &2:m, &4:F, &8:E, d_{>1}&16:l, &32:m, &64:F, &128:E)
+depm5 = 68  (d_{=1}: &1:l, &2:m, &4:F, &8:E, d_{>1}&16:l, &32:m, &64:F, &128:E)
+emalignmentdependencies = 2  (lextrain: dependencies in the HMM alignment model.  &1: sentence length; &2: previous class; &4: previous position;  &8: French position; &16: French class)
+emprobforempty = 0.4  (f-b-trn: probability for empty word)
+
+parameters modifying the EM-algorithm:
+--------------------------------------
+m5p0 = -1  (fixed value for parameter p_0 in IBM-5 (if negative then it is determined in training))
+manlexfactor1 = 0  ()
+manlexfactor2 = 0  ()
+manlexmaxmultiplicity = 20  ()
+maxfertility = 10  (maximal fertility for fertility models)
+p0 = 0.999  (fixed value for parameter p_0 in IBM-3/4 (if negative then it is determined in training))
+pegging = 0  (0: no pegging; 1: do pegging)
+
+general parameters:
+-------------------
+ml = 101  (maximum sentence length)
+
+No. of iterations:
+-------------------
+hmmiterations = 5  (mh)
+model1iterations = 5  (number of iterations for Model 1)
+model2iterations = 0  (number of iterations for Model 2)
+model3iterations = 3  (number of iterations for Model 3)
+model4iterations = 3  (number of iterations for Model 4)
+model5iterations = 0  (number of iterations for Model 5)
+model6iterations = 0  (number of iterations for Model 6)
+
+parameter for various heuristics in GIZA++ for efficient training:
+------------------------------------------------------------------
+countincreasecutoff = 1e-06  (Counts increment cutoff threshold)
+countincreasecutoffal = 1e-05  (Counts increment cutoff threshold for alignments in training of fertility models)
+mincountincrease = 1e-07  (minimal count increase)
+peggedcutoff = 0.03  (relative cutoff probability for alignment-centers in pegging)
+probcutoff = 1e-07  (Probability cutoff threshold for lexicon probabilities)
+probsmooth = 1e-07  (probability smoothing (floor) value )
+
+parameters for describing the type and amount of output:
+-----------------------------------------------------------
+compactalignmentformat = 0  (0: detailled alignment format, 1: compact alignment format )
+hmmdumpfrequency = 0  (dump frequency of HMM)
+l = 118-05-30.143032.mumin-cse.log  (log file name)
+log = 0  (0: no logfile; 1: logfile)
+model1dumpfrequency = 1  (dump frequency of Model 1)
+model2dumpfrequency = 0  (dump frequency of Model 2)
+model345dumpfrequency = 0  (dump frequency of Model 3/4/5)
+nbestalignments = 0  (for printing the n best alignments)
+nodumps = 1  (1: do not write any files)
+o = /home/mumin-cse/smt-en-bn/train/giza.en-bn/en-bn  (output file prefix)
+onlyaldumps = 1  (1: do not write any files)
+outputpath =   (output path)
+transferdumpfrequency = 0  (output: dump of transfer from Model 2 to 3)
+verbose = 0  (0: not verbose; 1: verbose)
+verbosesentence = -10  (number of sentence for which a lot of information should be printed (negative: no output))
+
+parameters describing input files:
+----------------------------------
+c = /home/mumin-cse/smt-en-bn/train/corpus/en-bn-int-train.snt  (training corpus file name)
+d =   (dictionary file name)
+s = /home/mumin-cse/smt-en-bn/train/corpus/bn.vcb  (source vocabulary file name)
+t = /home/mumin-cse/smt-en-bn/train/corpus/en.vcb  (target vocabulary file name)
+tc =   (test corpus file name)
+
+smoothing parameters:
+---------------------
+emalsmooth = 0.2  (f-b-trn: smoothing factor for HMM alignment model (can be ignored by -emSmoothHMM))
+model23smoothfactor = 0  (smoothing parameter for IBM-2/3 (interpolation with constant))
+model4smoothfactor = 0.4  (smooting parameter for alignment probabilities in Model 4)
+model5smoothfactor = 0.1  (smooting parameter for distortion probabilities in Model 5 (linear interpolation with constant))
+nsmooth = 4  (smoothing for fertility parameters (good value: 64): weight for wordlength-dependent fertility parameters)
+nsmoothgeneral = 0  (smoothing for fertility parameters (default: 0): weight for word-independent fertility parameters)
+
+parameters modifying the models:
+--------------------------------
+compactadtable = 1  (1: only 3-dimensional alignment table for IBM-2 and IBM-3)
+deficientdistortionforemptyword = 0  (0: IBM-3/IBM-4 as described in (Brown et al. 1993); 1: distortion model of empty word is deficient; 2: distoriton model of empty word is deficient (differently); setting this parameter also helps to avoid that during IBM-3 and IBM-4 training too many words are aligned with the empty word)
+depm4 = 76  (d_{=1}: &1:l, &2:m, &4:F, &8:E, d_{>1}&16:l, &32:m, &64:F, &128:E)
+depm5 = 68  (d_{=1}: &1:l, &2:m, &4:F, &8:E, d_{>1}&16:l, &32:m, &64:F, &128:E)
+emalignmentdependencies = 2  (lextrain: dependencies in the HMM alignment model.  &1: sentence length; &2: previous class; &4: previous position;  &8: French position; &16: French class)
+emprobforempty = 0.4  (f-b-trn: probability for empty word)
+
+parameters modifying the EM-algorithm:
+--------------------------------------
+m5p0 = -1  (fixed value for parameter p_0 in IBM-5 (if negative then it is determined in training))
+manlexfactor1 = 0  ()
+manlexfactor2 = 0  ()
+manlexmaxmultiplicity = 20  ()
+maxfertility = 10  (maximal fertility for fertility models)
+p0 = 0.999  (fixed value for parameter p_0 in IBM-3/4 (if negative then it is determined in training))
+pegging = 0  (0: no pegging; 1: do pegging)
+
+reading vocabulary files 
+Reading vocabulary file from:/home/mumin-cse/smt-en-bn/train/corpus/bn.vcb
+Reading vocabulary file from:/home/mumin-cse/smt-en-bn/train/corpus/en.vcb
+Source vocabulary list has 154392 unique tokens 
+Target vocabulary list has 92618 unique tokens 
+Calculating vocabulary frequencies from corpus /home/mumin-cse/smt-en-bn/train/corpus/en-bn-int-train.snt
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+[sent:100000]
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+ Train total # sentence pairs (weighted): 197338
+Size of source portion of the training corpus: 3.12774e+06 tokens
+Size of the target portion of the training corpus: 3.51396e+06 tokens 
+In source portion of the training corpus, only 154391 unique tokens appeared
+In target portion of the training corpus, only 92616 unique tokens appeared
+lambda for PP calculation in IBM-1,IBM-2,HMM:= 3.51396e+06/(3.32507e+06-197338)== 1.12348
+There are 19434913 19434913 entries in table
+==========================================================
+Model1 Training Started at: Wed May 30 14:30:35 2018
+
+-----------
+Model1: Iteration 1
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+[sent:100000]
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Model1: (1) TRAIN CROSS-ENTROPY 16.7303 PERPLEXITY 108724
+Model1: (1) VITERBI TRAIN CROSS-ENTROPY 21.0258 PERPLEXITY 2.13492e+06
+Model 1 Iteration: 1 took: 13 seconds
+-----------
+Model1: Iteration 2
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+[sent:100000]
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Model1: (2) TRAIN CROSS-ENTROPY 7.41471 PERPLEXITY 170.628
+Model1: (2) VITERBI TRAIN CROSS-ENTROPY 9.40154 PERPLEXITY 676.31
+Model 1 Iteration: 2 took: 13 seconds
+-----------
+Model1: Iteration 3
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+[sent:100000]
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Model1: (3) TRAIN CROSS-ENTROPY 6.43943 PERPLEXITY 86.7886
+Model1: (3) VITERBI TRAIN CROSS-ENTROPY 7.93184 PERPLEXITY 244.186
+Model 1 Iteration: 3 took: 12 seconds
+-----------
+Model1: Iteration 4
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+[sent:100000]
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Model1: (4) TRAIN CROSS-ENTROPY 6.12845 PERPLEXITY 69.9597
+Model1: (4) VITERBI TRAIN CROSS-ENTROPY 7.32909 PERPLEXITY 160.797
+Model 1 Iteration: 4 took: 13 seconds
+-----------
+Model1: Iteration 5
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+[sent:100000]
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Model1: (5) TRAIN CROSS-ENTROPY 6.02776 PERPLEXITY 65.2433
+Model1: (5) VITERBI TRAIN CROSS-ENTROPY 7.07069 PERPLEXITY 134.428
+Model 1 Iteration: 5 took: 12 seconds
+Entire Model1 Training took: 63 seconds
+NOTE: I am doing iterations with the HMM model!
+Read classes: #words: 154391  #classes: 51
+Read classes: #words: 92617  #classes: 51
+
+==========================================================
+Hmm Training Started at: Wed May 30 14:31:38 2018
+
+-----------
+Hmm: Iteration 1
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+[sent:100000]
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+A/D table contains 111272 parameters.
+Hmm: (1) TRAIN CROSS-ENTROPY 5.98151 PERPLEXITY 63.1849
+Hmm: (1) VITERBI TRAIN CROSS-ENTROPY 6.93427 PERPLEXITY 122.299
+
+Hmm Iteration: 1 took: 60 seconds
+
+-----------
+Hmm: Iteration 2
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+[sent:100000]
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+A/D table contains 111272 parameters.
+Hmm: (2) TRAIN CROSS-ENTROPY 5.69901 PERPLEXITY 51.9484
+Hmm: (2) VITERBI TRAIN CROSS-ENTROPY 6.15546 PERPLEXITY 71.2818
+
+Hmm Iteration: 2 took: 60 seconds
+
+-----------
+Hmm: Iteration 3
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+[sent:100000]
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+A/D table contains 111272 parameters.
+Hmm: (3) TRAIN CROSS-ENTROPY 5.39847 PERPLEXITY 42.1796
+Hmm: (3) VITERBI TRAIN CROSS-ENTROPY 5.70909 PERPLEXITY 52.3126
+
+Hmm Iteration: 3 took: 58 seconds
+
+-----------
+Hmm: Iteration 4
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+[sent:100000]
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+A/D table contains 111272 parameters.
+Hmm: (4) TRAIN CROSS-ENTROPY 5.25827 PERPLEXITY 38.2733
+Hmm: (4) VITERBI TRAIN CROSS-ENTROPY 5.51215 PERPLEXITY 45.6376
+
+Hmm Iteration: 4 took: 58 seconds
+
+-----------
+Hmm: Iteration 5
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+[sent:100000]
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+A/D table contains 111272 parameters.
+Hmm: (5) TRAIN CROSS-ENTROPY 5.18844 PERPLEXITY 36.465
+Hmm: (5) VITERBI TRAIN CROSS-ENTROPY 5.41208 PERPLEXITY 42.5794
+
+Hmm Iteration: 5 took: 57 seconds
+
+Entire Hmm Training took: 293 seconds
+==========================================================
+Read classes: #words: 154391  #classes: 51
+Read classes: #words: 92617  #classes: 51
+Read classes: #words: 154391  #classes: 51
+Read classes: #words: 92617  #classes: 51
+
+==========================================================
+Starting H333444:  Viterbi Training
+ H333444 Training Started at: Wed May 30 14:36:32 2018
+
+
+---------------------
+THTo3: Iteration 1
+Reading more sentence pairs into memory ... 
+10000
+20000
+30000
+40000
+50000
+Reading more sentence pairs into memory ... 
+[sent:100000]
+60000
+70000
+80000
+90000
+100000
+Reading more sentence pairs into memory ... 
+110000
+120000
+130000
+140000
+150000
+Reading more sentence pairs into memory ... 
+160000
+170000
+180000
+190000
+Reading more sentence pairs into memory ... 
+#centers(pre/hillclimbed/real): 1 1 1  #al: 574.752 #alsophisticatedcountcollection: 0 #hcsteps: 0
+#peggingImprovements: 0
+A/D table contains 111272 parameters.
+A/D table contains 106198 parameters.
+NTable contains 1543920 parameter.
+p0_count is 2.50367e+06 and p1 is 505135; p0 is 0.999 p1: 0.001
+THTo3: TRAIN CROSS-ENTROPY 5.19935 PERPLEXITY 36.7419
+THTo3: (1) TRAIN VITERBI CROSS-ENTROPY 5.34739 PERPLEXITY 40.7122
+
+THTo3 Viterbi Iteration : 1 took: 50 seconds
+
+---------------------
+Model3: Iteration 2
+Reading more sentence pairs into memory ... 
+10000
+20000
+30000
+40000
+50000
+Reading more sentence pairs into memory ... 
+[sent:100000]
+60000
+70000
+80000
+90000
+100000
+Reading more sentence pairs into memory ... 
+110000
+120000
+130000
+140000
+150000
+Reading more sentence pairs into memory ... 
+160000
+170000
+180000
+190000
+Reading more sentence pairs into memory ... 
+#centers(pre/hillclimbed/real): 1 1 1  #al: 577.993 #alsophisticatedcountcollection: 0 #hcsteps: 3.59551
+#peggingImprovements: 0
+A/D table contains 111272 parameters.
+A/D table contains 106198 parameters.
+NTable contains 1543920 parameter.
+p0_count is 3.11146e+06 and p1 is 201252; p0 is 0.999 p1: 0.001
+Model3: TRAIN CROSS-ENTROPY 6.86608 PERPLEXITY 116.653
+Model3: (2) TRAIN VITERBI CROSS-ENTROPY 6.97991 PERPLEXITY 126.23
+
+Model3 Viterbi Iteration : 2 took: 44 seconds
+
+---------------------
+Model3: Iteration 3
+Reading more sentence pairs into memory ... 
+10000
+20000
+30000
+40000
+50000
+Reading more sentence pairs into memory ... 
+[sent:100000]
+60000
+70000
+80000
+90000
+100000
+Reading more sentence pairs into memory ... 
+110000
+120000
+130000
+140000
+150000
+Reading more sentence pairs into memory ... 
+160000
+170000
+180000
+190000
+Reading more sentence pairs into memory ... 
+#centers(pre/hillclimbed/real): 1 1 1  #al: 578.045 #alsophisticatedcountcollection: 0 #hcsteps: 3.73411
+#peggingImprovements: 0
+A/D table contains 111272 parameters.
+A/D table contains 106198 parameters.
+NTable contains 1543920 parameter.
+p0_count is 3.26445e+06 and p1 is 124757; p0 is 0.999 p1: 0.001
+Model3: TRAIN CROSS-ENTROPY 6.66088 PERPLEXITY 101.187
+Model3: (3) TRAIN VITERBI CROSS-ENTROPY 6.76021 PERPLEXITY 108.399
+
+Model3 Viterbi Iteration : 3 took: 43 seconds
+
+---------------------
+T3To4: Iteration 4
+Reading more sentence pairs into memory ... 
+10000
+20000
+30000
+40000
+50000
+Reading more sentence pairs into memory ... 
+[sent:100000]
+60000
+70000
+80000
+90000
+100000
+Reading more sentence pairs into memory ... 
+110000
+120000
+130000
+140000
+150000
+Reading more sentence pairs into memory ... 
+160000
+170000
+180000
+190000
+Reading more sentence pairs into memory ... 
+#centers(pre/hillclimbed/real): 1 1 1  #al: 577.982 #alsophisticatedcountcollection: 67.7974 #hcsteps: 3.78641
+#peggingImprovements: 0
+D4 table contains 527800 parameters.
+A/D table contains 111272 parameters.
+A/D table contains 106198 parameters.
+NTable contains 1543920 parameter.
+p0_count is 3.30517e+06 and p1 is 104396; p0 is 0.999 p1: 0.001
+T3To4: TRAIN CROSS-ENTROPY 6.60989 PERPLEXITY 97.6732
+T3To4: (4) TRAIN VITERBI CROSS-ENTROPY 6.70328 PERPLEXITY 104.205
+
+T3To4 Viterbi Iteration : 4 took: 60 seconds
+
+---------------------
+Model4: Iteration 5
+Reading more sentence pairs into memory ... 
+10000
+20000
+30000
+40000
+50000
+Reading more sentence pairs into memory ... 
+[sent:100000]
+60000
+70000
+80000
+90000
+100000
+Reading more sentence pairs into memory ... 
+110000
+120000
+130000
+140000
+150000
+Reading more sentence pairs into memory ... 
+160000
+170000
+180000
+190000
+Reading more sentence pairs into memory ... 
+#centers(pre/hillclimbed/real): 1 1 1  #al: 578.092 #alsophisticatedcountcollection: 53.4679 #hcsteps: 3.38332
+#peggingImprovements: 0
+D4 table contains 527800 parameters.
+A/D table contains 111272 parameters.
+A/D table contains 106301 parameters.
+NTable contains 1543920 parameter.
+p0_count is 3.25323e+06 and p1 is 130366; p0 is 0.999 p1: 0.001
+Model4: TRAIN CROSS-ENTROPY 6.55722 PERPLEXITY 94.1717
+Model4: (5) TRAIN VITERBI CROSS-ENTROPY 6.6301 PERPLEXITY 99.0512
+
+Model4 Viterbi Iteration : 5 took: 145 seconds
+
+---------------------
+Model4: Iteration 6
+Reading more sentence pairs into memory ... 
+10000
+20000
+30000
+40000
+50000
+Reading more sentence pairs into memory ... 
+[sent:100000]
+60000
+70000
+80000
+90000
+100000
+Reading more sentence pairs into memory ... 
+110000
+120000
+130000
+140000
+150000
+Reading more sentence pairs into memory ... 
+160000
+170000
+180000
+190000
+Reading more sentence pairs into memory ... 
+#centers(pre/hillclimbed/real): 1 1 1  #al: 578.096 #alsophisticatedcountcollection: 48.6426 #hcsteps: 3.38676
+#peggingImprovements: 0
+D4 table contains 527800 parameters.
+A/D table contains 111272 parameters.
+A/D table contains 106301 parameters.
+NTable contains 1543920 parameter.
+p0_count is 3.25696e+06 and p1 is 128502; p0 is 0.999 p1: 0.001
+Model4: TRAIN CROSS-ENTROPY 6.42111 PERPLEXITY 85.6932
+Model4: (6) TRAIN VITERBI CROSS-ENTROPY 6.48871 PERPLEXITY 89.8041
+
+Model4 Viterbi Iteration : 6 took: 146 seconds
+H333444 Training Finished at: Wed May 30 14:44:40 2018
+
+
+Entire Viterbi H333444 Training took: 488 seconds
+==========================================================
+
+Entire Training took: 848 seconds
+Program Finished at: Wed May 30 14:44:40 2018
+
+==========================================================
+Executing: rm -f /home/mumin-cse/smt-en-bn/train/giza.en-bn/en-bn.A3.final.gz
+Executing: gzip /home/mumin-cse/smt-en-bn/train/giza.en-bn/en-bn.A3.final
+(2.1a) running snt2cooc bn-en @ Wed May 30 14:44:44 +06 2018
+
+Executing: mkdir -p /home/mumin-cse/smt-en-bn/train/giza.bn-en
+Executing: /home/mumin-cse/mosesdecoder/tools/snt2cooc.out /home/mumin-cse/smt-en-bn/train/corpus/en.vcb /home/mumin-cse/smt-en-bn/train/corpus/bn.vcb /home/mumin-cse/smt-en-bn/train/corpus/bn-en-int-train.snt > /home/mumin-cse/smt-en-bn/train/giza.bn-en/bn-en.cooc
+/home/mumin-cse/mosesdecoder/tools/snt2cooc.out /home/mumin-cse/smt-en-bn/train/corpus/en.vcb /home/mumin-cse/smt-en-bn/train/corpus/bn.vcb /home/mumin-cse/smt-en-bn/train/corpus/bn-en-int-train.snt > /home/mumin-cse/smt-en-bn/train/giza.bn-en/bn-en.cooc
+line 1000
+line 2000
+line 3000
+line 4000
+line 5000
+line 6000
+line 7000
+line 8000
+line 9000
+line 10000
+line 11000
+line 12000
+line 13000
+line 14000
+line 15000
+line 16000
+line 17000
+line 18000
+line 19000
+line 20000
+line 21000
+line 22000
+line 23000
+line 24000
+line 25000
+line 26000
+line 27000
+line 28000
+line 29000
+line 30000
+line 31000
+line 32000
+line 33000
+line 34000
+line 35000
+line 36000
+line 37000
+line 38000
+line 39000
+line 40000
+line 41000
+line 42000
+line 43000
+line 44000
+line 45000
+line 46000
+line 47000
+line 48000
+line 49000
+line 50000
+line 51000
+line 52000
+line 53000
+line 54000
+line 55000
+line 56000
+line 57000
+line 58000
+line 59000
+line 60000
+line 61000
+line 62000
+line 63000
+line 64000
+line 65000
+line 66000
+line 67000
+line 68000
+line 69000
+line 70000
+line 71000
+line 72000
+line 73000
+line 74000
+line 75000
+line 76000
+line 77000
+line 78000
+line 79000
+line 80000
+line 81000
+line 82000
+line 83000
+line 84000
+line 85000
+line 86000
+line 87000
+line 88000
+line 89000
+line 90000
+line 91000
+line 92000
+line 93000
+line 94000
+line 95000
+line 96000
+line 97000
+line 98000
+line 99000
+line 100000
+line 101000
+line 102000
+line 103000
+line 104000
+line 105000
+line 106000
+line 107000
+line 108000
+line 109000
+line 110000
+line 111000
+line 112000
+line 113000
+line 114000
+line 115000
+line 116000
+line 117000
+line 118000
+line 119000
+line 120000
+line 121000
+line 122000
+line 123000
+line 124000
+line 125000
+line 126000
+line 127000
+line 128000
+line 129000
+line 130000
+line 131000
+line 132000
+line 133000
+line 134000
+line 135000
+line 136000
+line 137000
+line 138000
+line 139000
+line 140000
+line 141000
+line 142000
+line 143000
+line 144000
+line 145000
+line 146000
+line 147000
+line 148000
+line 149000
+line 150000
+line 151000
+line 152000
+line 153000
+line 154000
+line 155000
+line 156000
+line 157000
+line 158000
+line 159000
+line 160000
+line 161000
+line 162000
+line 163000
+line 164000
+line 165000
+line 166000
+line 167000
+line 168000
+line 169000
+line 170000
+line 171000
+line 172000
+line 173000
+line 174000
+line 175000
+line 176000
+line 177000
+line 178000
+line 179000
+line 180000
+line 181000
+line 182000
+line 183000
+line 184000
+line 185000
+line 186000
+line 187000
+line 188000
+line 189000
+line 190000
+line 191000
+line 192000
+line 193000
+line 194000
+line 195000
+line 196000
+line 197000
+END.
+(2.1b) running giza bn-en @ Wed May 30 14:45:14 +06 2018
+/home/mumin-cse/mosesdecoder/tools/GIZA++  -CoocurrenceFile /home/mumin-cse/smt-en-bn/train/giza.bn-en/bn-en.cooc -c /home/mumin-cse/smt-en-bn/train/corpus/bn-en-int-train.snt -m1 5 -m2 0 -m3 3 -m4 3 -model1dumpfrequency 1 -model4smoothfactor 0.4 -nodumps 1 -nsmooth 4 -o /home/mumin-cse/smt-en-bn/train/giza.bn-en/bn-en -onlyaldumps 1 -p0 0.999 -s /home/mumin-cse/smt-en-bn/train/corpus/en.vcb -t /home/mumin-cse/smt-en-bn/train/corpus/bn.vcb
+Executing: /home/mumin-cse/mosesdecoder/tools/GIZA++  -CoocurrenceFile /home/mumin-cse/smt-en-bn/train/giza.bn-en/bn-en.cooc -c /home/mumin-cse/smt-en-bn/train/corpus/bn-en-int-train.snt -m1 5 -m2 0 -m3 3 -m4 3 -model1dumpfrequency 1 -model4smoothfactor 0.4 -nodumps 1 -nsmooth 4 -o /home/mumin-cse/smt-en-bn/train/giza.bn-en/bn-en -onlyaldumps 1 -p0 0.999 -s /home/mumin-cse/smt-en-bn/train/corpus/en.vcb -t /home/mumin-cse/smt-en-bn/train/corpus/bn.vcb
+/home/mumin-cse/mosesdecoder/tools/GIZA++  -CoocurrenceFile /home/mumin-cse/smt-en-bn/train/giza.bn-en/bn-en.cooc -c /home/mumin-cse/smt-en-bn/train/corpus/bn-en-int-train.snt -m1 5 -m2 0 -m3 3 -m4 3 -model1dumpfrequency 1 -model4smoothfactor 0.4 -nodumps 1 -nsmooth 4 -o /home/mumin-cse/smt-en-bn/train/giza.bn-en/bn-en -onlyaldumps 1 -p0 0.999 -s /home/mumin-cse/smt-en-bn/train/corpus/en.vcb -t /home/mumin-cse/smt-en-bn/train/corpus/bn.vcb
+Parameter 'coocurrencefile' changed from '' to '/home/mumin-cse/smt-en-bn/train/giza.bn-en/bn-en.cooc'
+Parameter 'c' changed from '' to '/home/mumin-cse/smt-en-bn/train/corpus/bn-en-int-train.snt'
+Parameter 'm3' changed from '5' to '3'
+Parameter 'm4' changed from '5' to '3'
+Parameter 'model1dumpfrequency' changed from '0' to '1'
+Parameter 'model4smoothfactor' changed from '0.2' to '0.4'
+Parameter 'nodumps' changed from '0' to '1'
+Parameter 'nsmooth' changed from '64' to '4'
+Parameter 'o' changed from '118-05-30.144514.mumin-cse' to '/home/mumin-cse/smt-en-bn/train/giza.bn-en/bn-en'
+Parameter 'onlyaldumps' changed from '0' to '1'
+Parameter 'p0' changed from '-1' to '0.999'
+Parameter 's' changed from '' to '/home/mumin-cse/smt-en-bn/train/corpus/en.vcb'
+Parameter 't' changed from '' to '/home/mumin-cse/smt-en-bn/train/corpus/bn.vcb'
+general parameters:
+-------------------
+ml = 101  (maximum sentence length)
+
+No. of iterations:
+-------------------
+hmmiterations = 5  (mh)
+model1iterations = 5  (number of iterations for Model 1)
+model2iterations = 0  (number of iterations for Model 2)
+model3iterations = 3  (number of iterations for Model 3)
+model4iterations = 3  (number of iterations for Model 4)
+model5iterations = 0  (number of iterations for Model 5)
+model6iterations = 0  (number of iterations for Model 6)
+
+parameter for various heuristics in GIZA++ for efficient training:
+------------------------------------------------------------------
+countincreasecutoff = 1e-06  (Counts increment cutoff threshold)
+countincreasecutoffal = 1e-05  (Counts increment cutoff threshold for alignments in training of fertility models)
+mincountincrease = 1e-07  (minimal count increase)
+peggedcutoff = 0.03  (relative cutoff probability for alignment-centers in pegging)
+probcutoff = 1e-07  (Probability cutoff threshold for lexicon probabilities)
+probsmooth = 1e-07  (probability smoothing (floor) value )
+
+parameters for describing the type and amount of output:
+-----------------------------------------------------------
+compactalignmentformat = 0  (0: detailled alignment format, 1: compact alignment format )
+hmmdumpfrequency = 0  (dump frequency of HMM)
+l = 118-05-30.144514.mumin-cse.log  (log file name)
+log = 0  (0: no logfile; 1: logfile)
+model1dumpfrequency = 1  (dump frequency of Model 1)
+model2dumpfrequency = 0  (dump frequency of Model 2)
+model345dumpfrequency = 0  (dump frequency of Model 3/4/5)
+nbestalignments = 0  (for printing the n best alignments)
+nodumps = 1  (1: do not write any files)
+o = /home/mumin-cse/smt-en-bn/train/giza.bn-en/bn-en  (output file prefix)
+onlyaldumps = 1  (1: do not write any files)
+outputpath =   (output path)
+transferdumpfrequency = 0  (output: dump of transfer from Model 2 to 3)
+verbose = 0  (0: not verbose; 1: verbose)
+verbosesentence = -10  (number of sentence for which a lot of information should be printed (negative: no output))
+
+parameters describing input files:
+----------------------------------
+c = /home/mumin-cse/smt-en-bn/train/corpus/bn-en-int-train.snt  (training corpus file name)
+d =   (dictionary file name)
+s = /home/mumin-cse/smt-en-bn/train/corpus/en.vcb  (source vocabulary file name)
+t = /home/mumin-cse/smt-en-bn/train/corpus/bn.vcb  (target vocabulary file name)
+tc =   (test corpus file name)
+
+smoothing parameters:
+---------------------
+emalsmooth = 0.2  (f-b-trn: smoothing factor for HMM alignment model (can be ignored by -emSmoothHMM))
+model23smoothfactor = 0  (smoothing parameter for IBM-2/3 (interpolation with constant))
+model4smoothfactor = 0.4  (smooting parameter for alignment probabilities in Model 4)
+model5smoothfactor = 0.1  (smooting parameter for distortion probabilities in Model 5 (linear interpolation with constant))
+nsmooth = 4  (smoothing for fertility parameters (good value: 64): weight for wordlength-dependent fertility parameters)
+nsmoothgeneral = 0  (smoothing for fertility parameters (default: 0): weight for word-independent fertility parameters)
+
+parameters modifying the models:
+--------------------------------
+compactadtable = 1  (1: only 3-dimensional alignment table for IBM-2 and IBM-3)
+deficientdistortionforemptyword = 0  (0: IBM-3/IBM-4 as described in (Brown et al. 1993); 1: distortion model of empty word is deficient; 2: distoriton model of empty word is deficient (differently); setting this parameter also helps to avoid that during IBM-3 and IBM-4 training too many words are aligned with the empty word)
+depm4 = 76  (d_{=1}: &1:l, &2:m, &4:F, &8:E, d_{>1}&16:l, &32:m, &64:F, &128:E)
+depm5 = 68  (d_{=1}: &1:l, &2:m, &4:F, &8:E, d_{>1}&16:l, &32:m, &64:F, &128:E)
+emalignmentdependencies = 2  (lextrain: dependencies in the HMM alignment model.  &1: sentence length; &2: previous class; &4: previous position;  &8: French position; &16: French class)
+emprobforempty = 0.4  (f-b-trn: probability for empty word)
+
+parameters modifying the EM-algorithm:
+--------------------------------------
+m5p0 = -1  (fixed value for parameter p_0 in IBM-5 (if negative then it is determined in training))
+manlexfactor1 = 0  ()
+manlexfactor2 = 0  ()
+manlexmaxmultiplicity = 20  ()
+maxfertility = 10  (maximal fertility for fertility models)
+p0 = 0.999  (fixed value for parameter p_0 in IBM-3/4 (if negative then it is determined in training))
+pegging = 0  (0: no pegging; 1: do pegging)
+
+general parameters:
+-------------------
+ml = 101  (maximum sentence length)
+
+No. of iterations:
+-------------------
+hmmiterations = 5  (mh)
+model1iterations = 5  (number of iterations for Model 1)
+model2iterations = 0  (number of iterations for Model 2)
+model3iterations = 3  (number of iterations for Model 3)
+model4iterations = 3  (number of iterations for Model 4)
+model5iterations = 0  (number of iterations for Model 5)
+model6iterations = 0  (number of iterations for Model 6)
+
+parameter for various heuristics in GIZA++ for efficient training:
+------------------------------------------------------------------
+countincreasecutoff = 1e-06  (Counts increment cutoff threshold)
+countincreasecutoffal = 1e-05  (Counts increment cutoff threshold for alignments in training of fertility models)
+mincountincrease = 1e-07  (minimal count increase)
+peggedcutoff = 0.03  (relative cutoff probability for alignment-centers in pegging)
+probcutoff = 1e-07  (Probability cutoff threshold for lexicon probabilities)
+probsmooth = 1e-07  (probability smoothing (floor) value )
+
+parameters for describing the type and amount of output:
+-----------------------------------------------------------
+compactalignmentformat = 0  (0: detailled alignment format, 1: compact alignment format )
+hmmdumpfrequency = 0  (dump frequency of HMM)
+l = 118-05-30.144514.mumin-cse.log  (log file name)
+log = 0  (0: no logfile; 1: logfile)
+model1dumpfrequency = 1  (dump frequency of Model 1)
+model2dumpfrequency = 0  (dump frequency of Model 2)
+model345dumpfrequency = 0  (dump frequency of Model 3/4/5)
+nbestalignments = 0  (for printing the n best alignments)
+nodumps = 1  (1: do not write any files)
+o = /home/mumin-cse/smt-en-bn/train/giza.bn-en/bn-en  (output file prefix)
+onlyaldumps = 1  (1: do not write any files)
+outputpath =   (output path)
+transferdumpfrequency = 0  (output: dump of transfer from Model 2 to 3)
+verbose = 0  (0: not verbose; 1: verbose)
+verbosesentence = -10  (number of sentence for which a lot of information should be printed (negative: no output))
+
+parameters describing input files:
+----------------------------------
+c = /home/mumin-cse/smt-en-bn/train/corpus/bn-en-int-train.snt  (training corpus file name)
+d =   (dictionary file name)
+s = /home/mumin-cse/smt-en-bn/train/corpus/en.vcb  (source vocabulary file name)
+t = /home/mumin-cse/smt-en-bn/train/corpus/bn.vcb  (target vocabulary file name)
+tc =   (test corpus file name)
+
+smoothing parameters:
+---------------------
+emalsmooth = 0.2  (f-b-trn: smoothing factor for HMM alignment model (can be ignored by -emSmoothHMM))
+model23smoothfactor = 0  (smoothing parameter for IBM-2/3 (interpolation with constant))
+model4smoothfactor = 0.4  (smooting parameter for alignment probabilities in Model 4)
+model5smoothfactor = 0.1  (smooting parameter for distortion probabilities in Model 5 (linear interpolation with constant))
+nsmooth = 4  (smoothing for fertility parameters (good value: 64): weight for wordlength-dependent fertility parameters)
+nsmoothgeneral = 0  (smoothing for fertility parameters (default: 0): weight for word-independent fertility parameters)
+
+parameters modifying the models:
+--------------------------------
+compactadtable = 1  (1: only 3-dimensional alignment table for IBM-2 and IBM-3)
+deficientdistortionforemptyword = 0  (0: IBM-3/IBM-4 as described in (Brown et al. 1993); 1: distortion model of empty word is deficient; 2: distoriton model of empty word is deficient (differently); setting this parameter also helps to avoid that during IBM-3 and IBM-4 training too many words are aligned with the empty word)
+depm4 = 76  (d_{=1}: &1:l, &2:m, &4:F, &8:E, d_{>1}&16:l, &32:m, &64:F, &128:E)
+depm5 = 68  (d_{=1}: &1:l, &2:m, &4:F, &8:E, d_{>1}&16:l, &32:m, &64:F, &128:E)
+emalignmentdependencies = 2  (lextrain: dependencies in the HMM alignment model.  &1: sentence length; &2: previous class; &4: previous position;  &8: French position; &16: French class)
+emprobforempty = 0.4  (f-b-trn: probability for empty word)
+
+parameters modifying the EM-algorithm:
+--------------------------------------
+m5p0 = -1  (fixed value for parameter p_0 in IBM-5 (if negative then it is determined in training))
+manlexfactor1 = 0  ()
+manlexfactor2 = 0  ()
+manlexmaxmultiplicity = 20  ()
+maxfertility = 10  (maximal fertility for fertility models)
+p0 = 0.999  (fixed value for parameter p_0 in IBM-3/4 (if negative then it is determined in training))
+pegging = 0  (0: no pegging; 1: do pegging)
+
+reading vocabulary files 
+Reading vocabulary file from:/home/mumin-cse/smt-en-bn/train/corpus/en.vcb
+Reading vocabulary file from:/home/mumin-cse/smt-en-bn/train/corpus/bn.vcb
+Source vocabulary list has 92618 unique tokens 
+Target vocabulary list has 154392 unique tokens 
+Calculating vocabulary frequencies from corpus /home/mumin-cse/smt-en-bn/train/corpus/bn-en-int-train.snt
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+[sent:100000]
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+ Train total # sentence pairs (weighted): 197338
+Size of source portion of the training corpus: 3.51396e+06 tokens
+Size of the target portion of the training corpus: 3.12774e+06 tokens 
+In source portion of the training corpus, only 92617 unique tokens appeared
+In target portion of the training corpus, only 154390 unique tokens appeared
+lambda for PP calculation in IBM-1,IBM-2,HMM:= 3.12774e+06/(3.7113e+06-197338)== 0.890088
+There are 19496687 19496687 entries in table
+==========================================================
+Model1 Training Started at: Wed May 30 14:45:17 2018
+
+-----------
+Model1: Iteration 1
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+[sent:100000]
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Model1: (1) TRAIN CROSS-ENTROPY 17.5152 PERPLEXITY 187331
+Model1: (1) VITERBI TRAIN CROSS-ENTROPY 21.9819 PERPLEXITY 4.14215e+06
+Model 1 Iteration: 1 took: 15 seconds
+-----------
+Model1: Iteration 2
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+[sent:100000]
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Model1: (2) TRAIN CROSS-ENTROPY 8.69528 PERPLEXITY 414.514
+Model1: (2) VITERBI TRAIN CROSS-ENTROPY 10.3997 PERPLEXITY 1350.93
+Model 1 Iteration: 2 took: 15 seconds
+-----------
+Model1: Iteration 3
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+[sent:100000]
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Model1: (3) TRAIN CROSS-ENTROPY 7.56689 PERPLEXITY 189.609
+Model1: (3) VITERBI TRAIN CROSS-ENTROPY 8.7521 PERPLEXITY 431.166
+Model 1 Iteration: 3 took: 15 seconds
+-----------
+Model1: Iteration 4
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+[sent:100000]
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Model1: (4) TRAIN CROSS-ENTROPY 7.20981 PERPLEXITY 148.037
+Model1: (4) VITERBI TRAIN CROSS-ENTROPY 8.12622 PERPLEXITY 279.406
+Model 1 Iteration: 4 took: 16 seconds
+-----------
+Model1: Iteration 5
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+[sent:100000]
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Model1: (5) TRAIN CROSS-ENTROPY 7.09597 PERPLEXITY 136.804
+Model1: (5) VITERBI TRAIN CROSS-ENTROPY 7.87196 PERPLEXITY 234.259
+Model 1 Iteration: 5 took: 15 seconds
+Entire Model1 Training took: 76 seconds
+NOTE: I am doing iterations with the HMM model!
+Read classes: #words: 92617  #classes: 51
+Read classes: #words: 154391  #classes: 51
+
+==========================================================
+Hmm Training Started at: Wed May 30 14:46:33 2018
+
+-----------
+Hmm: Iteration 1
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+[sent:100000]
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+A/D table contains 107571 parameters.
+Hmm: (1) TRAIN CROSS-ENTROPY 7.04652 PERPLEXITY 132.194
+Hmm: (1) VITERBI TRAIN CROSS-ENTROPY 7.74284 PERPLEXITY 214.203
+
+Hmm Iteration: 1 took: 69 seconds
+
+-----------
+Hmm: Iteration 2
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+[sent:100000]
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+A/D table contains 107571 parameters.
+Hmm: (2) TRAIN CROSS-ENTROPY 6.68817 PERPLEXITY 103.119
+Hmm: (2) VITERBI TRAIN CROSS-ENTROPY 7.03964 PERPLEXITY 131.566
+
+Hmm Iteration: 2 took: 68 seconds
+
+-----------
+Hmm: Iteration 3
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+[sent:100000]
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+A/D table contains 107571 parameters.
+Hmm: (3) TRAIN CROSS-ENTROPY 6.37697 PERPLEXITY 83.1112
+Hmm: (3) VITERBI TRAIN CROSS-ENTROPY 6.61977 PERPLEXITY 98.3444
+
+Hmm Iteration: 3 took: 67 seconds
+
+-----------
+Hmm: Iteration 4
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+[sent:100000]
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+A/D table contains 107571 parameters.
+Hmm: (4) TRAIN CROSS-ENTROPY 6.22947 PERPLEXITY 75.0341
+Hmm: (4) VITERBI TRAIN CROSS-ENTROPY 6.43052 PERPLEXITY 86.2541
+
+Hmm Iteration: 4 took: 67 seconds
+
+-----------
+Hmm: Iteration 5
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+[sent:100000]
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+Reading more sentence pairs into memory ... 
+A/D table contains 107571 parameters.
+Hmm: (5) TRAIN CROSS-ENTROPY 6.15384 PERPLEXITY 71.2016
+Hmm: (5) VITERBI TRAIN CROSS-ENTROPY 6.33204 PERPLEXITY 80.5628
+
+Hmm Iteration: 5 took: 66 seconds
+
+Entire Hmm Training took: 337 seconds
+==========================================================
+Read classes: #words: 92617  #classes: 51
+Read classes: #words: 154391  #classes: 51
+Read classes: #words: 92617  #classes: 51
+Read classes: #words: 154391  #classes: 51
+
+==========================================================
+Starting H333444:  Viterbi Training
+ H333444 Training Started at: Wed May 30 14:52:10 2018
+
+
+---------------------
+THTo3: Iteration 1
+Reading more sentence pairs into memory ... 
+10000
+20000
+30000
+40000
+50000
+Reading more sentence pairs into memory ... 
+[sent:100000]
+60000
+70000
+80000
+90000
+100000
+Reading more sentence pairs into memory ... 
+110000
+120000
+130000
+140000
+150000
+Reading more sentence pairs into memory ... 
+160000
+170000
+180000
+190000
+Reading more sentence pairs into memory ... 
+#centers(pre/hillclimbed/real): 1 1 1  #al: 536.875 #alsophisticatedcountcollection: 0 #hcsteps: 0
+#peggingImprovements: 0
+A/D table contains 107571 parameters.
+A/D table contains 109680 parameters.
+NTable contains 926180 parameter.
+p0_count is 2.73075e+06 and p1 is 198486; p0 is 0.999 p1: 0.001
+THTo3: TRAIN CROSS-ENTROPY 6.26322 PERPLEXITY 76.8099
+THTo3: (1) TRAIN VITERBI CROSS-ENTROPY 6.44944 PERPLEXITY 87.3929
+
+THTo3 Viterbi Iteration : 1 took: 51 seconds
+
+---------------------
+Model3: Iteration 2
+Reading more sentence pairs into memory ... 
+10000
+20000
+30000
+40000
+50000
+Reading more sentence pairs into memory ... 
+[sent:100000]
+60000
+70000
+80000
+90000
+100000
+Reading more sentence pairs into memory ... 
+110000
+120000
+130000
+140000
+150000
+Reading more sentence pairs into memory ... 
+160000
+170000
+180000
+190000
+Reading more sentence pairs into memory ... 
+#centers(pre/hillclimbed/real): 1 1 1  #al: 537.15 #alsophisticatedcountcollection: 0 #hcsteps: 2.57827
+#peggingImprovements: 0
+A/D table contains 107571 parameters.
+A/D table contains 109679 parameters.
+NTable contains 926180 parameter.
+p0_count is 2.94384e+06 and p1 is 91948.3; p0 is 0.999 p1: 0.001
+Model3: TRAIN CROSS-ENTROPY 7.52367 PERPLEXITY 184.013
+Model3: (2) TRAIN VITERBI CROSS-ENTROPY 7.61465 PERPLEXITY 195.992
+
+Model3 Viterbi Iteration : 2 took: 49 seconds
+
+---------------------
+Model3: Iteration 3
+Reading more sentence pairs into memory ... 
+10000
+20000
+30000
+40000
+50000
+Reading more sentence pairs into memory ... 
+[sent:100000]
+60000
+70000
+80000
+90000
+100000
+Reading more sentence pairs into memory ... 
+110000
+120000
+130000
+140000
+150000
+Reading more sentence pairs into memory ... 
+160000
+170000
+180000
+190000
+Reading more sentence pairs into memory ... 
+#centers(pre/hillclimbed/real): 1 1 1  #al: 537.112 #alsophisticatedcountcollection: 0 #hcsteps: 2.59301
+#peggingImprovements: 0
+A/D table contains 107571 parameters.
+A/D table contains 109679 parameters.
+NTable contains 926180 parameter.
+p0_count is 2.97283e+06 and p1 is 77450.8; p0 is 0.999 p1: 0.001
+Model3: TRAIN CROSS-ENTROPY 7.39878 PERPLEXITY 168.754
+Model3: (3) TRAIN VITERBI CROSS-ENTROPY 7.47783 PERPLEXITY 178.259
+
+Model3 Viterbi Iteration : 3 took: 49 seconds
+
+---------------------
+T3To4: Iteration 4
+Reading more sentence pairs into memory ... 
+10000
+20000
+30000
+40000
+50000
+Reading more sentence pairs into memory ... 
+[sent:100000]
+60000
+70000
+80000
+90000
+100000
+Reading more sentence pairs into memory ... 
+110000
+120000
+130000
+140000
+150000
+Reading more sentence pairs into memory ... 
+160000
+170000
+180000
+190000
+Reading more sentence pairs into memory ... 
+#centers(pre/hillclimbed/real): 1 1 1  #al: 537.055 #alsophisticatedcountcollection: 44.9457 #hcsteps: 2.59676
+#peggingImprovements: 0
+D4 table contains 527800 parameters.
+A/D table contains 107571 parameters.
+A/D table contains 109679 parameters.
+NTable contains 926180 parameter.
+p0_count is 2.98161e+06 and p1 is 73060.8; p0 is 0.999 p1: 0.001
+T3To4: TRAIN CROSS-ENTROPY 7.34785 PERPLEXITY 162.901
+T3To4: (4) TRAIN VITERBI CROSS-ENTROPY 7.42157 PERPLEXITY 171.441
+
+T3To4 Viterbi Iteration : 4 took: 59 seconds
+
+---------------------
+Model4: Iteration 5
+Reading more sentence pairs into memory ... 
+10000
+20000
+30000
+40000
+50000
+Reading more sentence pairs into memory ... 
+[sent:100000]
+60000
+70000
+80000
+90000
+100000
+Reading more sentence pairs into memory ... 
+110000
+120000
+130000
+140000
+150000
+Reading more sentence pairs into memory ... 
+160000
+170000
+180000
+190000
+Reading more sentence pairs into memory ... 
+#centers(pre/hillclimbed/real): 1 1 1  #al: 537.073 #alsophisticatedcountcollection: 35.5532 #hcsteps: 2.29406
+#peggingImprovements: 0
+D4 table contains 527800 parameters.
+A/D table contains 107571 parameters.
+A/D table contains 109755 parameters.
+NTable contains 926180 parameter.
+p0_count is 2.95949e+06 and p1 is 84121.9; p0 is 0.999 p1: 0.001
+Model4: TRAIN CROSS-ENTROPY 7.17353 PERPLEXITY 144.36
+Model4: (5) TRAIN VITERBI CROSS-ENTROPY 7.22513 PERPLEXITY 149.617
+
+Model4 Viterbi Iteration : 5 took: 120 seconds
+
+---------------------
+Model4: Iteration 6
+Reading more sentence pairs into memory ... 
+10000
+20000
+30000
+40000
+50000
+Reading more sentence pairs into memory ... 
+[sent:100000]
+60000
+70000
+80000
+90000
+100000
+Reading more sentence pairs into memory ... 
+110000
+120000
+130000
+140000
+150000
+Reading more sentence pairs into memory ... 
+160000
+170000
+180000
+190000
+Reading more sentence pairs into memory ... 
+#centers(pre/hillclimbed/real): 1 1 1  #al: 537.047 #alsophisticatedcountcollection: 32.6663 #hcsteps: 2.28017
+#peggingImprovements: 0
+D4 table contains 527800 parameters.
+A/D table contains 107571 parameters.
+A/D table contains 109755 parameters.
+NTable contains 926180 parameter.
+p0_count is 2.96715e+06 and p1 is 80292.7; p0 is 0.999 p1: 0.001
+Model4: TRAIN CROSS-ENTROPY 7.05455 PERPLEXITY 132.933
+Model4: (6) TRAIN VITERBI CROSS-ENTROPY 7.10215 PERPLEXITY 137.392
+
+Model4 Viterbi Iteration : 6 took: 120 seconds
+H333444 Training Finished at: Wed May 30 14:59:38 2018
+
+
+Entire Viterbi H333444 Training took: 448 seconds
+==========================================================
+
+Entire Training took: 864 seconds
+Program Finished at: Wed May 30 14:59:38 2018
+
+==========================================================
+Executing: rm -f /home/mumin-cse/smt-en-bn/train/giza.bn-en/bn-en.A3.final.gz
+Executing: gzip /home/mumin-cse/smt-en-bn/train/giza.bn-en/bn-en.A3.final
+(3) generate word alignment @ Wed May 30 14:59:42 +06 2018
+Combining forward and inverted alignment from files:
+  /home/mumin-cse/smt-en-bn/train/giza.en-bn/en-bn.A3.final.{bz2,gz}
+  /home/mumin-cse/smt-en-bn/train/giza.bn-en/bn-en.A3.final.{bz2,gz}
+Executing: mkdir -p /home/mumin-cse/smt-en-bn/train/model
+Executing: /home/mumin-cse/mosesdecoder/scripts/training/giza2bal.pl -d "gzip -cd /home/mumin-cse/smt-en-bn/train/giza.bn-en/bn-en.A3.final.gz" -i "gzip -cd /home/mumin-cse/smt-en-bn/train/giza.en-bn/en-bn.A3.final.gz" |/home/mumin-cse/mosesdecoder/scripts/../bin/symal -alignment="grow" -diagonal="yes" -final="yes" -both="yes" > /home/mumin-cse/smt-en-bn/train/model/aligned.grow-diag-final-and
+symal: computing grow alignment: diagonal (1) final (1)both-uncovered (1)
+skip=<0> counts=<197338>
+(4) generate lexical translation table 0-0 @ Wed May 30 14:59:56 +06 2018
+(/home/mumin-cse/corpus/training/training.clean.en,/home/mumin-cse/corpus/training/training.clean.bn,/home/mumin-cse/smt-en-bn/train/model/lex)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Saved: /home/mumin-cse/smt-en-bn/train/model/lex.f2e and /home/mumin-cse/smt-en-bn/train/model/lex.e2f
+FILE: /home/mumin-cse/corpus/training/training.clean.bn
+FILE: /home/mumin-cse/corpus/training/training.clean.en
+FILE: /home/mumin-cse/smt-en-bn/train/model/aligned.grow-diag-final-and
+(5) extract phrases @ Wed May 30 15:00:09 +06 2018
+/home/mumin-cse/mosesdecoder/scripts/generic/extract-parallel.perl 4 split "sort    " /home/mumin-cse/mosesdecoder/scripts/../bin/extract /home/mumin-cse/corpus/training/training.clean.bn /home/mumin-cse/corpus/training/training.clean.en /home/mumin-cse/smt-en-bn/train/model/aligned.grow-diag-final-and /home/mumin-cse/smt-en-bn/train/model/extract 7 orientation --model wbe-msd --GZOutput 
+Executing: /home/mumin-cse/mosesdecoder/scripts/generic/extract-parallel.perl 4 split "sort    " /home/mumin-cse/mosesdecoder/scripts/../bin/extract /home/mumin-cse/corpus/training/training.clean.bn /home/mumin-cse/corpus/training/training.clean.en /home/mumin-cse/smt-en-bn/train/model/aligned.grow-diag-final-and /home/mumin-cse/smt-en-bn/train/model/extract 7 orientation --model wbe-msd --GZOutput 
+MAX 7 1 0
+Started Wed May 30 15:00:09 2018
+using gzip 
+isBSDSplit=0 
+Executing: mkdir -p /home/mumin-cse/smt-en-bn/train/model/tmp.3777; ls -l /home/mumin-cse/smt-en-bn/train/model/tmp.3777 
+total=197338 line-per-split=49335 
+split -d -l 49335 -a 7 /home/mumin-cse/corpus/training/training.clean.bn /home/mumin-cse/smt-en-bn/train/model/tmp.3777/target.split -d -l 49335 -a 7 /home/mumin-cse/corpus/training/training.clean.en /home/mumin-cse/smt-en-bn/train/model/tmp.3777/source.split -d -l 49335 -a 7 /home/mumin-cse/smt-en-bn/train/model/aligned.grow-diag-final-and /home/mumin-cse/smt-en-bn/train/model/tmp.3777/align.merging extract / extract.inv
+gunzip -c /home/mumin-cse/smt-en-bn/train/model/tmp.3777/extract.0000000.gz /home/mumin-cse/smt-en-bn/train/model/tmp.3777/extract.0000001.gz /home/mumin-cse/smt-en-bn/train/model/tmp.3777/extract.0000002.gz /home/mumin-cse/smt-en-bn/train/model/tmp.3777/extract.0000003.gz  | LC_ALL=C sort     -T /home/mumin-cse/smt-en-bn/train/model/tmp.3777 2>> /dev/stderr | gzip -c > /home/mumin-cse/smt-en-bn/train/model/extract.sorted.gz 2>> /dev/stderr 
+gunzip -c /home/mumin-cse/smt-en-bn/train/model/tmp.3777/extract.0000000.inv.gz /home/mumin-cse/smt-en-bn/train/model/tmp.3777/extract.0000001.inv.gz /home/mumin-cse/smt-en-bn/train/model/tmp.3777/extract.0000002.inv.gz /home/mumin-cse/smt-en-bn/train/model/tmp.3777/extract.0000003.inv.gz  | LC_ALL=C sort     -T /home/mumin-cse/smt-en-bn/train/model/tmp.3777 2>> /dev/stderr | gzip -c > /home/mumin-cse/smt-en-bn/train/model/extract.inv.sorted.gz 2>> /dev/stderr 
+gunzip -c /home/mumin-cse/smt-en-bn/train/model/tmp.3777/extract.0000000.o.gz /home/mumin-cse/smt-en-bn/train/model/tmp.3777/extract.0000001.o.gz /home/mumin-cse/smt-en-bn/train/model/tmp.3777/extract.0000002.o.gz /home/mumin-cse/smt-en-bn/train/model/tmp.3777/extract.0000003.o.gz  | LC_ALL=C sort     -T /home/mumin-cse/smt-en-bn/train/model/tmp.3777 2>> /dev/stderr | gzip -c > /home/mumin-cse/smt-en-bn/train/model/extract.o.sorted.gz 2>> /dev/stderr 
+Finished Wed May 30 15:01:28 2018
+(6) score phrases @ Wed May 30 15:01:28 +06 2018
+(6.1)  creating table half /home/mumin-cse/smt-en-bn/train/model/phrase-table.half.f2e @ Wed May 30 15:01:28 +06 2018
+/home/mumin-cse/mosesdecoder/scripts/generic/score-parallel.perl 4 "sort    " /home/mumin-cse/mosesdecoder/scripts/../bin/score /home/mumin-cse/smt-en-bn/train/model/extract.sorted.gz /home/mumin-cse/smt-en-bn/train/model/lex.f2e /home/mumin-cse/smt-en-bn/train/model/phrase-table.half.f2e.gz  0 
+Executing: /home/mumin-cse/mosesdecoder/scripts/generic/score-parallel.perl 4 "sort    " /home/mumin-cse/mosesdecoder/scripts/../bin/score /home/mumin-cse/smt-en-bn/train/model/extract.sorted.gz /home/mumin-cse/smt-en-bn/train/model/lex.f2e /home/mumin-cse/smt-en-bn/train/model/phrase-table.half.f2e.gz  0 
+using gzip 
+Started Wed May 30 15:01:29 2018
+/home/mumin-cse/mosesdecoder/scripts/../bin/score /home/mumin-cse/smt-en-bn/train/model/tmp.3882/extract.0.gz /home/mumin-cse/smt-en-bn/train/model/lex.f2e /home/mumin-cse/smt-en-bn/train/model/tmp.3882/phrase-table.half.0000000.gz  2>> /dev/stderr 
+/home/mumin-cse/smt-en-bn/train/model/tmp.3882/run.0.sh/home/mumin-cse/smt-en-bn/train/model/tmp.3882/run.1.sh/home/mumin-cse/smt-en-bn/train/model/tmp.3882/run.2.sh/home/mumin-cse/smt-en-bn/train/model/tmp.3882/run.3.shmv /home/mumin-cse/smt-en-bn/train/model/tmp.3882/phrase-table.half.0000000.gz /home/mumin-cse/smt-en-bn/train/model/phrase-table.half.f2e.gzrm -rf /home/mumin-cse/smt-en-bn/train/model/tmp.3882 
+Finished Wed May 30 15:03:28 2018
+(6.3)  creating table half /home/mumin-cse/smt-en-bn/train/model/phrase-table.half.e2f @ Wed May 30 15:03:28 +06 2018
+/home/mumin-cse/mosesdecoder/scripts/generic/score-parallel.perl 4 "sort    " /home/mumin-cse/mosesdecoder/scripts/../bin/score /home/mumin-cse/smt-en-bn/train/model/extract.inv.sorted.gz /home/mumin-cse/smt-en-bn/train/model/lex.e2f /home/mumin-cse/smt-en-bn/train/model/phrase-table.half.e2f.gz --Inverse 1 
+Executing: /home/mumin-cse/mosesdecoder/scripts/generic/score-parallel.perl 4 "sort    " /home/mumin-cse/mosesdecoder/scripts/../bin/score /home/mumin-cse/smt-en-bn/train/model/extract.inv.sorted.gz /home/mumin-cse/smt-en-bn/train/model/lex.e2f /home/mumin-cse/smt-en-bn/train/model/phrase-table.half.e2f.gz --Inverse 1 
+using gzip 
+Started Wed May 30 15:03:28 2018
+/home/mumin-cse/mosesdecoder/scripts/../bin/score /home/mumin-cse/smt-en-bn/train/model/tmp.3940/extract.0.gz /home/mumin-cse/smt-en-bn/train/model/lex.e2f /home/mumin-cse/smt-en-bn/train/model/tmp.3940/phrase-table.half.0000000.gz --Inverse  2>> /dev/stderr 
+/home/mumin-cse/smt-en-bn/train/model/tmp.3940/run.0.sh/home/mumin-cse/smt-en-bn/train/model/tmp.3940/run.1.sh/home/mumin-cse/smt-en-bn/train/model/tmp.3940/run.2.sh/home/mumin-cse/smt-en-bn/train/model/tmp.3940/run.3.shgunzip -c /home/mumin-cse/smt-en-bn/train/model/tmp.3940/phrase-table.half.*.gz 2>> /dev/stderr| LC_ALL=C sort     -T /home/mumin-cse/smt-en-bn/train/model/tmp.3940  | gzip -c > /home/mumin-cse/smt-en-bn/train/model/phrase-table.half.e2f.gz  2>> /dev/stderr rm -rf /home/mumin-cse/smt-en-bn/train/model/tmp.3940 
+Finished Wed May 30 15:05:42 2018
+(6.6) consolidating the two halves @ Wed May 30 15:05:42 +06 2018
+Executing: /home/mumin-cse/mosesdecoder/scripts/../bin/consolidate /home/mumin-cse/smt-en-bn/train/model/phrase-table.half.f2e.gz /home/mumin-cse/smt-en-bn/train/model/phrase-table.half.e2f.gz /dev/stdout | gzip -c > /home/mumin-cse/smt-en-bn/train/model/phrase-table.gz
+Consolidate v2.0 written by Philipp Koehn
+consolidating direct and indirect rule tables
+.......................................................................................
+Executing: rm -f /home/mumin-cse/smt-en-bn/train/model/phrase-table.half.*
+(7) learn reordering model @ Wed May 30 15:06:20 +06 2018
+(7.1) [no factors] learn reordering model @ Wed May 30 15:06:20 +06 2018
+(7.2) building tables @ Wed May 30 15:06:20 +06 2018
+Executing: /home/mumin-cse/mosesdecoder/scripts/../bin/lexical-reordering-score /home/mumin-cse/smt-en-bn/train/model/extract.o.sorted.gz 0.5 /home/mumin-cse/smt-en-bn/train/model/reordering-table. --model "wbe msd wbe-msd-bidirectional-fe"
+Lexical Reordering Scorer
+scores lexical reordering models of several types (hierarchical, phrase-based and word-based-extraction
+(8) learn generation model @ Wed May 30 15:07:05 +06 2018
+  no generation model requested, skipping step
+(9) create moses.ini @ Wed May 30 15:07:05 +06 2018
